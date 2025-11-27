@@ -7,7 +7,6 @@ Route::get('/', function () {
 });
 
 Route::get('/ninjas', function () {
-
     $ninjas = [
         [
             "name" => "mario",
@@ -16,17 +15,19 @@ Route::get('/ninjas', function () {
         ],
         [
             "name" => "luigi",
-            "skill" => 45,
+            "skill" => 65,
             "id" => "2"
         ],
     ];
-
     return view('ninjas.index', ["ninjas" => $ninjas]);
 });
 
+
+Route::get('/ninjas/create', function () {
+    return view('ninjas.create');
+});
+
+
 Route::get('/ninjas/{id}', function ($id) {
-
-
-
     return view('ninjas.show', ["id" => $id]);
 });
