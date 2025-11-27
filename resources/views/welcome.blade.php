@@ -10,7 +10,7 @@
     <h1>Welcome to Ninja Network</h1>
     <p>click the button bellow to view the list of ninjas</p>
 
-    <a href="" class="btn">
+    <a href="/ninjas" class="btn">
         find a ninja
     </a>
 </body>
